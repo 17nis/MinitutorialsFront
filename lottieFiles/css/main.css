@@ -1,0 +1,62 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,600;1,700;1,800;1,900&display=swap");
+body {
+  background: #1b1b1b;
+  margin: 0;
+  display: grid;
+  place-content: center;
+  height: 100vh;
+  font-family: "Nunito";
+  color: white;
+}
+
+.container {
+  position: relative;
+  width: 60%;
+  margin: 0 auto;
+  background: #232323;
+  padding: 2em;
+  border-radius: 5%;
+}
+
+.container h1 {
+  margin: 0;
+}
+
+.container p {
+  color: gray;
+}
+
+button {
+  background: #343434;
+  margin-top: 2em;
+  border: none;
+  padding: 1em;
+  color: white;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: .2em;
+  outline: 0;
+  cursor: pointer;
+  border-radius: 5%;
+}
+
+button:hover {
+  background: #424242;
+}
+
+button:active {
+  background: orange;
+}
+
+.svg {
+  width: 200px;
+  position: absolute;
+  top: -40px;
+  left: -30px;
+  pointer-events: none;
+}
+
+.hide {
+  display: none;
+}
+/*# sourceMappingURL=main.css.map */

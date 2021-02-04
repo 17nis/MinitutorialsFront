@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+
+    <div class="container">
+        <div class="svg hide" id="svg"></div>
+    
+        <h1>Confetti generator</h1>
+        <p>The sole purpose of this exercise is to learn how to use lottiefiles, and, in particular, how to animate confetti svg.</p>
+
+        <button id="lottieBtn">Give me confetti</button>
+    </div>
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.7.6/lottie.min.js" integrity="sha512-BB7rb8ZBAxtdJdB7nwDijJH9NC+648xSzviK9Itm+5APTtdpgKz1+82bDl4znz/FBhd0R7pJ/gQtomnMpZYzRw==" crossorigin="anonymous"></script>
+    
+    <script>
+
+        const play = document.querySelector("#lottieBtn");
+
+        const svgContainer = document.querySelector("#svg");
+        const animItem = bodymovin.loadAnimation({
+            wrapper: svgContainer,
+            animType: "svg",
+            loop: false,
+            autoplay: false,
+            path: "https://assets9.lottiefiles.com/packages/lf20_u4yrau.json"
+        });
+
+        play.addEventListener("click", () =>{
+            svgContainer.classList.remove("hide");
+            // animItem.play();  -- it plays once
+            animItem.goToAndPlay(0, true);
+        })
+
+        animItem.addEventListener("complete", () =>{
+            svgContainer.classList.add()
+        })
+
+
+    </script>
+</body>
+</html>
