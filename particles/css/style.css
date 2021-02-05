@@ -1,0 +1,107 @@
+#particles-js {
+  background-color: white;
+  height: 100vh;
+}
+
+body {
+  font-family: "Poppins";
+}
+
+header {
+  position: absolute;
+  top: 0;
+  margin: 0;
+  left: 0;
+  padding: 20px 40px;
+  display: flex;
+}
+
+header .brand {
+  position: relative;
+  display: flex;
+  pointer-events: none;
+}
+
+header .brand img {
+  height: 60px;
+  margin: 15px;
+}
+
+header .brand p {
+  margin-left: 10px;
+  font-size: 1.5em;
+  color: #1f3247;
+}
+
+header .brand p span {
+  font-weight: 600;
+}
+
+nav {
+  position: absolute;
+  display: flex;
+  margin: 20px;
+  top: 0;
+  right: 0;
+  padding: 20px 40px;
+  display: flex;
+}
+
+nav button {
+  margin: 10px;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+nav button:hover {
+  background-color: #64dfdf25;
+}
+
+section {
+  position: absolute;
+  top: 40%;
+  margin: auto;
+  left: 0;
+  right: 0;
+  background-color: transparent;
+  width: 60%;
+  pointer-events: none;
+}
+
+section p {
+  font-size: 2.1em;
+  text-align: center;
+}
+
+section p span {
+  font-weight: 600;
+  font-size: 1.1em;
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #4ea7de78;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #48bfe373;
+}
+
+.projects {
+  height: 400px;
+}
+/*# sourceMappingURL=style.css.map */

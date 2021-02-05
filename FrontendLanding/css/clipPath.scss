@@ -1,0 +1,44 @@
+.clipPath{
+  width: 30%;
+  border-radius: 10px;
+  position: absolute;
+  top: 30%;
+  right: 30%;
+
+  .inner{
+      background:#00ffd5;
+      padding: 1em;
+      border-radius: 10px;
+      width:calc(100%-2em);
+      clip-path: circle(8% at 94% 25%);
+      transition: all .5s ease-in-out;
+      cursor: pointer;
+
+      &:hover{
+          clip-path: circle(75%);
+          background:#00e1ff;
+      }
+
+      span{
+          float:right;
+          color: white;
+          font-weight: bold;
+          transition: color .5s;
+          position: relative;
+          margin-right: auto;
+          margin-top: auto;
+          font-size: 2em;
+      }
+      h1{
+        color: white;
+        margin:0;
+      }
+      p{
+        color: white;
+        font-size:.8rem;
+      }
+      &:hover span{
+          color: rgba(255,255,255,0);
+      }
+  }
+}

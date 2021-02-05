@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/clipPath.css">
+  <title>Playfull Portfolio!</title>
+</head>
+<body>
+  
+  <div class="presentation">
+    <h1>Hey there, I am Genís Frigola</h1>
+    <p>This is a <span>playfull portfolio</span>, I hope you enjoy it!</p>
+    <!-- CLIP-PATH -->
+    <div class="clipPath">
+      <div class="inner">
+        <span id="plus">+</span>
+        <h1>Let's play</h1>
+        <p>I have always enjoyed playful exepriences, so here you have one about me!</p>
+      </div>
+    </div>
+  </div>
+  
+  <section>
+    <h2>Explain who I am: I am a Frontend developer and UX / UI designer</h2>
+    <p>What have I studied + what i know</p>
+    <p>What I like</p>
+    <p>Why I can be a good asset for your company?</p>
+    <p>Some projects: virtual reality, valmet, sports, medium, etc..</p>
+  </section>
+  
+  
+  <div class="end">
+    <div class="svg hide" id="svg"></div>
+    <h2>You did it! You discovered my profile :D</h2>
+    <button id="lottieBtn">Click me for some confetti</button>
+    <p>contact</p>
+    <p>+ visit my other profile</p>
+  </div>
+  
+  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.7.6/lottie.min.js" integrity="sha512-BB7rb8ZBAxtdJdB7nwDijJH9NC+648xSzviK9Itm+5APTtdpgKz1+82bDl4znz/FBhd0R7pJ/gQtomnMpZYzRw==" crossorigin="anonymous"></script>
+  
+  <script>
+    
+    const play = document.querySelector("#lottieBtn");
+    
+    const svgContainer = document.querySelector("#svg");
+    const animItem = bodymovin.loadAnimation({
+      wrapper: svgContainer,
+      animType: "svg",
+      loop: false,
+      autoplay: false,
+      path: "https://assets9.lottiefiles.com/packages/lf20_u4yrau.json"
+    });
+    
+    play.addEventListener("click", () =>{
+      svgContainer.classList.remove("hide");
+      animItem.goToAndPlay(0, true);
+    })
+    
+    animItem.addEventListener("complete", () =>{
+      svgContainer.classList.add()
+    })
+  </script>
+</body>
+</html>
