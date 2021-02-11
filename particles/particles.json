@@ -52,7 +52,7 @@
         "distance":150
       },
       "push":{
-        "particles_nb": 8
+        "particles_nb": 5
       }
     }
   }
